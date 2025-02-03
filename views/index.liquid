@@ -1,14 +1,37 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
 
-  <p>{{ person.name }}</p>
+  
+  
+    <div class="content">
+<div class="card">
+  <img src="Squad1H-Rick.png" alt="Rick Pijnacker" width="100" height="100">
+  
+  <div class="name">
+  <h2>{{ person.name }}</h2>
+</div>
 
-  <footer></footer>
-</article>
+  <p>
+    Ik ben een creative, rekenkundige, en oplossingsgerichte frontend developer met een passie voor voetbal en darten.
+
+    <div class="card-about">
+      <div class="item">
+         <span class="value">22</span>
+         <span class="label">Leeftijd</span>
+      </div>
+      <div class="item">
+         <span class="value">Anna Paulowna</span>
+         <span class="label">Woonplaats</span>
+      </div>
+      <div class="item">
+         <span class="value">Frontend Developer</span>
+         <span class="label">Beroep</span>
+      </div>
+   </div>
+   <button type="button">Meer info</button>
+
+  </div>
+</div>
+<svg viewBox="0 0 208 278"></svg>
 
 {% render 'partials/foot.liquid' %}

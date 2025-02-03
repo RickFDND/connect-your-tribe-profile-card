@@ -1,53 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-body {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  font-family: Helvetica, Arial, sans-serif;
-  background: silver;
-  color: #050542;
+html {
+  height: 30vh;
+  
 }
-
 header {
-  padding: 0.5rem;
-  background: #A675F5;
-  color: white;
-
-  h1 {
-    text-transform: uppercase;
-  }
+width: 90%;
+height: 90%;
 }
-
-article {
+body{
+align-items: center;
+justify-content: center;
+min-height: 70vh;
+margin: 0;
+display: flex;
+color: black;
+background-image: repeating-radial-gradient(blue,magenta)
+} 
+img{
+  margin-top: -1.5;
+  margin-left: -1.5;
+}
+.content {
+  max-width: 1200px;
+  max-height: 500px;
+  margin: auto;
+  background: rgb(0, 0, 0);
+  padding: 30px;
+  display: grid;
+  border-radius: 30px;
+}
+.card-about {
+  margin-top: 0.01rem;
+  display: grid;
+  grid-auto-flow: column;
+}
+.item {
   display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  width: 20rem;
-  aspect-ratio: 1/1;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  background: white;
-  text-align: center;
-  transform-origin: center;
-  transform: rotate(2deg);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  > p {
-    font-size: 2rem;
-    font-family: 'Permanent Marker', cursive;
-    transform-origin: center;
-    transform: rotate(-6deg);
-    word-break: break-all;
+  flex-direction: column;
+  margin-bottom: 7rem;
+  
+  .value {
+     font-size: 0.6rem;
+  }
+  
+  .label {
+     margin-top: 0.15rem;
+     font-size: 0.75rem;
+     font-weight: 600;
+     color: var(--primary);
   }
 }
-
-footer {
-  height: 1rem;
-  background: #A675F5;
+.name{
+  margin-top: -3rem;
+}
+button {
+  font-family: "helvetica neue", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid rgba(70, 70, 70, 0.6);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 2px rgb(0 0 200 / 40%);
+  border-radius: 200px;
+  padding: 10px 10px;
+  cursor: pointer;
+  place-items: right;
+}
+.card { 
+  width: calc(var(--card-size) * 1.586);
+  height: var(--card-size);
+  
+  border-radius: 0.95rem;
+  box-shadow:  0 22px 70px 4px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+  
+  background: rgb(0, 0, 0);
+  
+  display: grid;
+  grid-template-columns: 40% auto;
+  color: rgb(255, 255, 255);
+  
+  align-items: center;
+  
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  
 }
