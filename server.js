@@ -46,6 +46,10 @@ app.get('/', async function (request, response) {
 // Had je meer pagina's in je oude visitekaartje? Zoals een contact.html?
 // Maak daar dan meer Routes voor aan, en koppel ze aan Views
 // app.get('/contact', function (request, response) {
+  app.get('/oefenen', async function (request, response) {
+
+    response.render('oefenen.liquid', {person: personResponseJSON.data})
+})
    // Render bijvoorbeeld contact.liquid uit de views map, zonder daar iets aan mee te geven
    // response.render('contact.liquid')
 // })

@@ -1,21 +1,21 @@
 {% render 'partials/head.liquid' %}
 
 <section class="profile-card">
-  <img src="Squad1H-Rick-modified.png">
-  <h1>{{person.name}}</h1>
+  <img class="profile-picture" src="Squad1H-Rick-modified.png">
+  <h1>{{ person.name }}</h1>
   <p>Frontend Design & Development</p>
 
   <div class="contact">
-    <svg></svg><p>+31 614772210</p>
-    <svg></svg><p>rick.pijnacker@hva.nl</p>
-    <svg></svg><a href="https://rickfdnd.github.io/i-love-web/"></a>
-    <svg></svg><p>Anna Paulowna</p>
+    <img src="whatsapp-logo.png"><p>+31 614772210</p>
+    <img src="email-logo.webp"><p>rick.pijnacker@hva.nl</p>
+    <a href="{{ person.website }}">https://rickfdnd.github.io/i-love-web/</a>
+    <p>Anna Paulowna</p>
   </div>
 
   <div class=socials>
     <a href="https://www.snapchat.com/?original_referrer=www.bing.com"></a>
     <a href="https://www.instagram.com/"></a>
-    <a href="https://github.com/RickFDND"></a>
+    <a href="https://github.com/RickFDND"><img src="github-logo.png"></a>
   </div>
 </section>
 
