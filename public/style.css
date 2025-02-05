@@ -2,7 +2,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: repeating-radial-gradient(blue,magenta);
+    background-image: repeating-radial-gradient(rgb(255, 255, 255),rgb(0, 0, 0));
     height: 98vh;
     font-family: monospace;
     p{
@@ -25,7 +25,7 @@ section{
     max-width: 400px;
     min-width: 330px;
     border-radius: 3em;
-    border: ridge 7px blueviolet;
+    border: solid 7px blueviolet;
 
     .profile-picture{
        max-width: 100px;
