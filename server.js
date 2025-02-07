@@ -15,6 +15,9 @@ const personResponse = await fetch('https://fdnd.directus.app/items/person/' + p
 // Lees van de response van die fetch het JSON object in, waar we iets mee kunnen doen
 const personResponseJSON = await personResponse.json()
 
+const personData = personResponseJSON.data
+personData.custom = JSON.parse(personData.custom)
+
 // Controleer eventueel de data in je console
 // (Let op: dit is _niet_ de console van je browser, maar van NodeJS, in je terminal)
 // console.log(personResponseJSON)
@@ -40,7 +43,7 @@ app.set('views', './views')
 // In je visitekaartje was dit waarschijnlijk index.html
 app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map en geef de opgehaalde data mee, in een variabele genaamd person
-   response.render('index.liquid', {person: personResponseJSON.data})
+   response.render('index.liquid', {person: personData})
 })
 
 // Had je meer pagina's in je oude visitekaartje? Zoals een contact.html?
@@ -48,7 +51,7 @@ app.get('/', async function (request, response) {
 // app.get('/contact', function (request, response) {
   app.get('/oefenen', async function (request, response) {
 
-    response.render('oefenen.liquid', {person: personResponseJSON.data})
+    response.render('oefenen.liquid', {person: personData})
 })
    // Render bijvoorbeeld contact.liquid uit de views map, zonder daar iets aan mee te geven
    // response.render('contact.liquid')
