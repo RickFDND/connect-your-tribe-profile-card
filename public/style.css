@@ -51,22 +51,27 @@ section {
             margin-top: 1em;
             color: white;
         }
+
         img {
         max-width: 2.5em;
         height: 2.5em;
         mix-blend-mode: multiply;
         }
     }
+
     .socials {
         margin-top: 2em;
-        a{
+
+        a {
             padding-top: 21.36px;
         }
+
         img {
             max-width: 5em;
             height: auto;
         }
-        img:hover{
+        
+        img:hover {
             transform: scale(1.2);
         }
     }
