@@ -62,12 +62,12 @@ section {
         a{
             padding-top: 21.36px;
         }
-        img:hover{
-            transform: scale(1.2);
-        }
         img {
             max-width: 5em;
             height: auto;
+        }
+        img:hover{
+            transform: scale(1.2);
         }
     }
 }
